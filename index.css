@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100%;
+}
+
+h3 {
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.result {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 15px;
+    color:hsl(0, 0%, 100%);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.score {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    color:hsl(0, 0%, 100%);
+
+}
+
+.circle {
+    background: radial-gradient(circle at center, hsla(256, 72%, 46%, 1) 0%, hsla(256, 72%, 46%, 1) 25%, hsla(241, 72%, 46%, 0) 25%, hsla(241, 72%, 46%, 0) 100%);
+    color: hsl(0, 0%, 100%);
+    height: 100%;
+    width: 100%;
+}
+
+.summary {
+    margin: 25px;
+    height: 100%;
+    font-size: 15px;
+}
+
+.icon1 {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    background-color: hsla(0, 100%, 67%, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#icon1, #icon2, #icon3, #icon4 {
+    float: left;
+    margin-right: 10px;
+}
+
+.icon2 {
+    display: inline-block;
+        vertical-align: top;
+        margin-bottom: 20px;
+        background-color: hsla(39, 100%, 56%, 0.4);
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        
+}
+
+.icon3 {
+    display: inline-block;
+        vertical-align: top;
+        margin-bottom: 20px;
+        background-color: hsla(166, 100%, 37%, 0.3);
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+}
+
+.icon4 {
+    display: inline-block;
+       vertical-align: top; 
+        margin-bottom: 40px;
+        background-color: hsla(234, 85%, 80%);
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+}
+
+.button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.button:active {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.text {
+    opacity: 0.8;
+}
+
+.text1 {
+    opacity: 0.5
+}
+
+.text2 {
+    float: right;
+}
+
+@media  screen and (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+    }
+
+    .score {
+        width: auto;
+        height: 100%;
+        margin-top: 0;
+    }
+}
