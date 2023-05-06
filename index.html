@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <script src="index.js" defer></script>
 
     <link
       rel="icon"
@@ -38,16 +39,16 @@
       <div class="result">
         <section>
           <p><span class="text"> Your Result </span></p>
-          <div class="score">
-            <p class="circle">76 <br /><span class="text">of 100</span></p>
-          </div>
+          <p class="score">
+            <span id="result" class="result">76</span> <br /><span class="text"
+              >of 100</span
+            >
+          </p>
 
-          <h3>Great</h3>
-          <p>
-            <span class="text">
-              You scored higher than 65% of the people who have taken these
-              tests.
-            </span>
+          <h3 id="result-status">Great</h3>
+          <p class="text">
+            You scored higher than <span id="result-summary">65%</span> of the
+            people who have taken these tests.
           </p>
         </section>
       </div>
@@ -55,7 +56,10 @@
       <div class="summary">
         <section>
           <h3>Summary</h3>
-          <div class="icon1">
+
+          <div id="summary-items"></div>
+
+          <!-- <div class="icon1">
             <img id="icon1" src="icon-reaction.svg" />
             <span
               >Reaction
@@ -93,7 +97,7 @@
                 ><b>72</b> / <span class="text1">100</span></span
               >
             </span>
-          </div>
+          </div> -->
 
           <button class="button" type="button">Continue</button>
         </section>
